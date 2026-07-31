@@ -144,3 +144,9 @@ button {
   color: white;
   text-shadow: 0 0 15px purple;
 }
+.server-ip {
+  font-size: 25px;
+  color: purple;
+  text-shadow: 0 0 15px violet;
+  font-weight: bold;
+}
