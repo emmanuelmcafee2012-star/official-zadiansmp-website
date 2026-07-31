@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle, #6b00b8, #100018);
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+header {
+  padding: 40px;
+}
+
+header h1 {
+  font-size: 65px;
+  text-shadow: 0 0 30px #c800ff;
+}
+
+header h2 {
+  font-size: 90px;
+  margin: 10px;
+  color: white;
+  text-shadow: 0 0 40px violet;
+}
+
+.shop-grid {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.shop-card {
+  width: 260px;
+  padding: 35px;
+  background: rgba(20, 0, 40, 0.9);
+  border: 3px solid purple;
+  border-radius: 20px;
+  box-shadow: 0 0 35px purple;
+  transition: .3s;
+}
+
+.shop-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 60px violet;
+}
+
+.shop-card h3 {
+  font-size: 40px;
+  text-shadow: 0 0 15px purple;
+}
+
+.shop-card p {
+  font-size: 20px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 15px 35px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(#b000ff, #500080);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 20px purple;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
