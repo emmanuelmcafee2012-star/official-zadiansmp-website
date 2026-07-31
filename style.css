@@ -150,3 +150,45 @@ button {
   text-shadow: 0 0 15px violet;
   font-weight: bold;
 }
+body::before {
+  content: "Z";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 700px;
+  font-weight: 900;
+  color: purple;
+  -webkit-text-stroke: 20px black;
+  opacity: 0.18;
+  z-index: -1;
+  animation: zPulse 3s infinite alternate;
+}
+
+@keyframes zPulse {
+  from {
+    text-shadow: 0 0 20px purple;
+    opacity: 0.15;
+  }
+  to {
+    text-shadow: 0 0 80px violet;
+    opacity: 0.35;
+  }
+}
+
+.shop-card {
+  backdrop-filter: blur(8px);
+}
+
+header h2 {
+  animation: shopGlow 2s infinite alternate;
+}
+
+@keyframes shopGlow {
+  from {
+    text-shadow: 0 0 20px purple;
+  }
+  to {
+    text-shadow: 0 0 60px violet;
+  }
+}
