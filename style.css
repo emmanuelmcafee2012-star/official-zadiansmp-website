@@ -83,3 +83,59 @@ body::before {
   opacity: 0.25;
   z-index: -1;
 }
+body {
+  animation: backgroundPulse 8s infinite alternate;
+}
+
+@keyframes backgroundPulse {
+  0% {
+    background: radial-gradient(circle, #7a00ff, #100018);
+  }
+  100% {
+    background: radial-gradient(circle, #b000ff, #050008);
+  }
+}
+
+body::before {
+  animation: zGlow 3s infinite alternate;
+}
+
+@keyframes zGlow {
+  from {
+    opacity: 0.15;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    opacity: 0.35;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+}
+
+.shop-card {
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+button {
+  animation: buttonGlow 2s infinite alternate;
+}
+
+@keyframes buttonGlow {
+  from {
+    box-shadow: 0 0 15px purple;
+  }
+  to {
+    box-shadow: 0 0 45px violet;
+  }
+}
