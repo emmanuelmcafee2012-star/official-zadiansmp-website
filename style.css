@@ -139,3 +139,8 @@ button {
     box-shadow: 0 0 45px violet;
   }
 }
+.server-ip {
+  font-size: 25px;
+  color: white;
+  text-shadow: 0 0 15px purple;
+}
